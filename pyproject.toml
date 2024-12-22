@@ -11,7 +11,7 @@ line-length = 99
 
 [tool.ruff]
 line-length = 99
-lint.select = [
+select = [
     "E",    # pycodestyle errors
     "F",    # pyflakes
     "B",    # bugbear
@@ -23,7 +23,7 @@ lint.select = [
     "SIM",  # simplify
     "C4",   # comprehensions
 ]
-lint.ignore = ["D212", "PD011", "PT011"]
+ignore = ["D212", "PD011", "PT011"]
 
 [tool.isort]
 profile = "black"
