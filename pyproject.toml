@@ -1,0 +1,30 @@
+[project]
+name = "manim-animations"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Renzo Tassara", email = "rtassaramiller@gmail.com"}]
+classifiers = ["Programming Language :: Python"]
+
+[tool.black]
+line-length = 99
+
+[tool.ruff]
+line-length = 99
+lint.select = [
+    "E",    # pycodestyle errors
+    "F",    # pyflakes
+    "B",    # bugbear
+    "W",    # pycodestyle warnings
+    "UP",   # pyupgrade
+    "ISC",  # implicit-str-concat
+    "G",    # logging-format
+    "PT",   # pytest style
+    "SIM",  # simplify
+    "C4",   # comprehensions
+]
+lint.ignore = ["D212", "PD011", "PT011"]
+
+[tool.isort]
+profile = "black"
+line_length = 99
