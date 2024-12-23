@@ -24,7 +24,7 @@ class HiddenGrid:
         self.grid[row][col].set_type(CellType.DESTINATION)
         return self
 
-    def set_stoppers(self, coords: list[tuple[int, int]] | None = None) -> "HiddenGrid":
+    def set_obstacles(self, coords: list[tuple[int, int]] | None = None) -> "HiddenGrid":
         if not coords:
             return self
         for row, col in coords:
